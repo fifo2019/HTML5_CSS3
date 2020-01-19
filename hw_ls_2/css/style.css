@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.top-header {
+    margin: 0;
+    width: 100%;
+    min-height: 323px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #445162;
+    clear: both;
+}
+
+.top-header-wrapper {
+    float: left;
+}
+
+.top-header-title {
+    width: 367px;
+    height: 45px;
+    font-family: Arial;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.top-header-list {
+    width: 422px;
+    min-height: 128px;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+    list-style-type: none;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.3);
+}
+
+.top-header-list-etem {
+    position: relative;
+}
+
+.top-header-list-etem:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    top: 7px;
+    left: -35px;
+    background-image: url('../img/check_icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-header-product-photo {
+    display: block;
+    float: right;
+}
