@@ -10,8 +10,8 @@ div.container {
 header.top-header {
     width: 100%;
     padding: 50px;
-    box-sizing: border-box;
     background-color: #445162;
+    box-sizing: border-box;
 }
 
 header.top-header:after {
@@ -111,7 +111,6 @@ p.info-product-text {
     font-weight: 400;
     color: #333333;
     margin: 20px 0 0 0;
-    word-wrap: break-word;
 }
 
 video.info-product-video {
@@ -123,7 +122,6 @@ video.info-product-video {
 
 section.dignity {
     width: 100%;
-    min-height: 419px;
     padding: 50px;
     background-color: #f5f5f5;
     box-sizing: border-box;
@@ -178,4 +176,65 @@ ul li.dignity-list-item:before {
     background-position: center;
 }
 
+section.screenshots {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
 
+section.screenshots:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+span.screenshots-title {
+    display: block;
+    text-align: center;
+    font-family: Arial;
+    margin: 0 0 35px 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+}
+
+figure.screenshots-wrapper {
+    margin: 0 0 30px 0;
+    float: left;
+}
+
+img.screenshots-product {
+    display: block;
+    width: 200px;
+    height: 150px;
+    background-color: #445161;
+    float: left;
+}
+
+figcaption.screenshots-product-wrapper {
+    width: 359px;
+    margin: 0 14px 0;
+    float: right;
+}
+
+span.screenshots-product-title {
+    display: block;
+    font-family: Arial;
+    font-size: 24px;
+    margin: 0 0 5px 0;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445161;
+}
+
+p.screenshots-product-text {
+    font-family: Arial;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    text-align: justify;
+}
