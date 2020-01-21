@@ -65,8 +65,6 @@ ul li.top-header-list-item:before {
 
 img.top-header-product-photo {
     display: block;
-    width: 469px;
-    height: 214px;
     float: right;
 }
 
@@ -114,8 +112,6 @@ p.info-product-text {
 }
 
 video.info-product-video {
-    width: 430px;
-    height: 245px;
     background-color: #445161;
     float: right;
 }
@@ -214,8 +210,6 @@ figure.screenshots-wrapper:after {
 
 img.screenshots-product {
     display: block;
-    width: 200px;
-    height: 150px;
     background-color: #445161;
     float: left;
 }
