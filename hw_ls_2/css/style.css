@@ -417,3 +417,217 @@ a span.buy-it-now-btn-text {
     color: #445161;
 }
 
+a span.buy-it-now-btn-text {
+    position: relative;
+    top: 1px;
+    transition: all 0.4s;
+}
+
+section.contacts {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #445162;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+span.contacts-title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 31px 0;
+}
+
+form.contacts-form {
+    width: 500px;
+    margin: 0 70px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input.contacts-form-info {
+    min-height: 40px;
+    background-color: #ffffff;
+    margin: 0 0 21px 0;
+    border-radius: 9px;
+    outline:none;
+}
+
+input.contacts-form-info::placeholder {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+    padding: 14px 0 14px 10px;
+}
+
+textarea.contacts-form-text {
+    min-height: 170px;
+    background-color: #ffffff;
+    margin: 0 0 21px 0;
+    border-radius: 9px;
+    outline:none;
+    resize: none;
+}
+
+textarea.contacts-form-text::placeholder {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+    padding: 13px 0 0 10px;
+}
+
+input.contacts-form-btn {
+    width: 140px;
+    height: 40px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #445162;
+    border-radius: 9px;
+    background-color: #ffffff;
+    outline:none;
+    align-self: center;
+}
+
+div.contacts-info-wrapper {
+    width: 240px;
+}
+
+div.contacts-data-wrapper {
+    padding: 0 0 0 35px;
+}
+
+span.contact-data {
+    width: 100%;
+    display: block;
+    font-family: ArialMT;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+span.skype:before {
+    content: "";
+    width: 24px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: -32px;
+    background-image: url('../img/skype_icon.png');
+}
+
+span.isq:before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: -32px;
+    background-image: url('../img/icq_icon.png');
+}
+
+span.email:before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: -32px;
+    background-image: url('../img/email_icon.png');
+}
+
+span.phone:before {
+    content: "";
+    width: 24px;
+    height: 23px;
+    position: absolute;
+    top: 0;
+    left: -32px;
+    background-image: url('../img/phone_icon.png');
+}
+
+div.social-buttons-wrapper {
+    width: 100%;
+    min-height: 42px;
+    display: flex;
+}
+
+a.social-button {
+    width: 45px;
+    height: 45px;
+    display: block;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0 5px 0 0;
+    position: relative;
+}
+
+i.fa-twitter:before {
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    color: #445162;
+}
+
+i.fa-facebook-f:before {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    color: #445162;
+}
+
+i.fa-linkedin-in:before {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #445162;
+}
+
+i.fa-google:before {
+    position: absolute;
+    top: 15px;
+    left: 14px;
+    color: #445162;
+}
+
+i.fa-youtube:before {
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    color: #445162;
+}
+
+section.copyright {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+span.copyright-info {
+    width: 100%;
+    display: block;
+    text-align: center;
+    ont-family: Arial;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #445162;
+}
