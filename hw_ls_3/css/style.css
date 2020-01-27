@@ -393,7 +393,7 @@ ol.buy-it-now-list {
 a.buy-it-now-btn {
     width: 260px;
     height: 40px;
-    display: block;
+    display: flex;
     background-color: #ffffff;
     border-radius: 8px;
     text-decoration: none;
@@ -410,17 +410,11 @@ a span.buy-it-now-btn-text {
     width: 100%;
     text-align: center;
     font-family: Arial;
-    padding: 13px 0;
+    margin: auto;
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
     color: #445161;
-}
-
-a span.buy-it-now-btn-text {
-    position: relative;
-    top: 1px;
-    transition: all 0.4s;
 }
 
 section.contacts {
@@ -455,43 +449,42 @@ form.contacts-form {
 }
 
 input.contacts-form-info {
-    min-height: 40px;
+    width: 100%;
     background-color: #ffffff;
     margin: 0 0 21px 0;
+    padding: 10px;
     border-radius: 9px;
+    border: 1px solid #445162;
     outline:none;
-}
-
-input.contacts-form-info::placeholder {
+    box-sizing: border-box;
     font-family: Arial;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #445162;
-    padding: 14px 0 14px 10px;
 }
 
 textarea.contacts-form-text {
+    width: 100%;
     min-height: 170px;
     background-color: #ffffff;
     margin: 0 0 21px 0;
     border-radius: 9px;
     outline:none;
     resize: none;
-}
-
-textarea.contacts-form-text::placeholder {
+    padding: 10px;
+    box-sizing: border-box;
     font-family: Arial;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #445162;
-    padding: 13px 0 0 10px;
 }
 
 input.contacts-form-btn {
     width: 140px;
-    height: 40px;
+    padding: 10px;
+    display: block;
     font-family: Arial;
     font-size: 16px;
     line-height: 24px;
@@ -499,9 +492,11 @@ input.contacts-form-btn {
     text-transform: uppercase;
     color: #445162;
     border-radius: 9px;
+    border: 1px solid #445162;
     background-color: #ffffff;
     outline:none;
     align-self: center;
+    word-break: break-all;
 }
 
 div.contacts-info-wrapper {
