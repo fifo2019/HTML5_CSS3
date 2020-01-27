@@ -83,7 +83,7 @@ span.info-product-title {
     line-height: 36px;
     font-weight: 400;
     color: #445161;
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
 }
 
 p.info-product-text {
@@ -93,7 +93,11 @@ p.info-product-text {
     line-height: 24px;
     font-weight: 400;
     color: #333333;
-    margin: 20px 0 0 0;
+    margin: 0 0 20px 0;
+}
+
+p.info-product-text:nth-child(3) {
+    margin: 0;
 }
 
 video.info-product-video {
@@ -120,6 +124,7 @@ span.dignity-title {
     line-height: 36px;
     font-weight: 400;
     color: #445161;
+    margin: 0 0 29px 0;
 }
 
 ul.dignity-list {
@@ -135,8 +140,13 @@ ul.dignity-list {
 }
 
 ul li.dignity-list-item {
-    margin: 29px 0 0 0;
+    margin: 0 0 29px 0;
     position: relative;
+}
+
+ul.dignity-list:nth-child(2) > li:nth-child(3),
+ul.dignity-list:nth-child(3) > li:nth-child(3) {
+    margin: 0;
 }
 
 ul li.dignity-list-item:before {
@@ -397,6 +407,7 @@ a.buy-it-now-btn {
     background-color: #ffffff;
     border-radius: 8px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 a.buy-it-now-btn:hover {
@@ -575,39 +586,48 @@ a.social-button {
     position: relative;
 }
 
-i.fa-twitter:before {
+i.twitter-icon:before {
+    content: "";
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 15px;
-    left: 13px;
-    color: #445162;
+    top: 11px;
+    left: 12px;
+    fill: #445162;
+    background-image: url('../img/twitter-icon.svg');
+    background-repeat: no-repeat;
 }
 
-i.fa-facebook-f:before {
+i.facebook-icon:before {
     position: absolute;
     top: 15px;
     left: 17px;
     color: #445162;
+    background-image: url('../img/facebook-icon.svg');
 }
 
-i.fa-linkedin-in:before {
+i.instagram-icon:before {
     position: absolute;
     top: 15px;
     left: 15px;
     color: #445162;
+    background-image: url('../img/instagram-icon.svg');
 }
 
-i.fa-google:before {
+i.google-icon:before {
     position: absolute;
     top: 15px;
     left: 14px;
     color: #445162;
+    background-image: url('../img/google-icon.svg');
 }
 
-i.fa-youtube:before {
+i.youtube-icon:before {
     position: absolute;
     top: 15px;
     left: 13px;
     color: #445162;
+    background-image: url('../img/youtube-icon.svg');
 }
 
 section.copyright {
