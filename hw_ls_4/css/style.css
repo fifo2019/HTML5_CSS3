@@ -100,8 +100,8 @@ p.info-product-text:nth-child(3) {
     margin: 0;
 }
 
-video.info-product-video {
-    background-color: #445161;
+video.video-product {
+    outline:none;
 }
 
 section.dignity {
@@ -401,31 +401,35 @@ ol.buy-it-now-list {
 }
 
 a.buy-it-now-btn {
+    display: block;
     width: 260px;
-    height: 40px;
-    display: flex;
-    background-color: #ffffff;
+    min-height: 40px;
     border-radius: 8px;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
+    font-family: Arial;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #445161;
+    background-color: #ffffff;
+    word-break: break-all;
+    box-sizing: border-box;
 }
 
 a.buy-it-now-btn:hover {
     position: relative;
     top: 1px;
     transition: all 0.4s;
+    color: #ffffff;
+    background-color: #bad2f3;
 }
 
-a span.buy-it-now-btn-text {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-family: Arial;
-    margin: auto;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
+a.buy-it-now-btn:active {
     color: #445161;
+    background-color: #ffffff;
 }
 
 section.contacts {
@@ -501,13 +505,28 @@ input.contacts-form-btn {
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #445162;
     border-radius: 9px;
     border: 1px solid #445162;
+    color: #445162;
     background-color: #ffffff;
+    box-sizing: border-box;
     outline:none;
     align-self: center;
     word-break: break-all;
+}
+
+input.contacts-form-btn:hover {
+    position: relative;
+    cursor: pointer;
+    top: 2px;
+    transition: all 0.4s;
+    color: #ffffff;
+    background-color: #bad2f3;
+}
+
+input.contacts-form-btn:active {
+    color: #445161;
+    background-color: #ffffff;
 }
 
 div.contacts-info-wrapper {
@@ -528,6 +547,11 @@ span.contact-data {
     color: #ffffff;
     margin: 0 0 20px 0;
     position: relative;
+}
+
+span.contact-data:hover {
+    color: #bad2f3;
+    cursor: pointer;
 }
 
 span.skype:before {
@@ -586,48 +610,79 @@ a.social-button {
     position: relative;
 }
 
-i.twitter-icon:before {
+a.twitter-icon:before {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     position: absolute;
-    top: 11px;
-    left: 12px;
-    fill: #445162;
-    background-image: url('../img/twitter-icon.svg');
+    top: 10px;
+    left: 10px;
+    background-image: url('../img/twitter-icon.png');
     background-repeat: no-repeat;
 }
 
-i.facebook-icon:before {
-    position: absolute;
-    top: 15px;
-    left: 17px;
-    color: #445162;
-    background-image: url('../img/facebook-icon.svg');
+a.twitter-icon:hover {
+    background-color: #bad2f3;
 }
 
-i.instagram-icon:before {
+a.facebook-icon:before {
+    content: "";
+    width: 24px;
+    height: 24px;
     position: absolute;
-    top: 15px;
-    left: 15px;
-    color: #445162;
-    background-image: url('../img/instagram-icon.svg');
+    top: 10px;
+    left: 10px;
+    background-image: url('../img/facebook-icon.png');
+    background-repeat: no-repeat;
 }
 
-i.google-icon:before {
-    position: absolute;
-    top: 15px;
-    left: 14px;
-    color: #445162;
-    background-image: url('../img/google-icon.svg');
+a.facebook-icon:hover {
+    background-color: #bad2f3;
 }
 
-i.youtube-icon:before {
+a.instagram-icon:before {
+    content: "";
+    width: 24px;
+    height: 24px;
     position: absolute;
-    top: 15px;
-    left: 13px;
-    color: #445162;
-    background-image: url('../img/youtube-icon.svg');
+    top: 10px;
+    left: 10px;
+    background-image: url('../img/instagram-icon.png');
+    background-repeat: no-repeat;
+}
+
+a.instagram-icon:hover {
+    background-color: #bad2f3;
+}
+
+a.google-icon:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    background-image: url('../img/google-icon.png');
+    background-repeat: no-repeat;
+}
+
+a.google-icon:hover {
+    background-color: #bad2f3;
+}
+
+a.youtube-icon:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-image: url('../img/youtube-icon.png');
+    background-repeat: no-repeat;
+}
+
+a.youtube-icon:hover {
+    background-color: #bad2f3;
 }
 
 section.copyright {
