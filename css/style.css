@@ -16,7 +16,7 @@ main.content {
 
 form.form-send {
     width: 700px;
-    margin: 50px 0 0 0;
+    margin: 40px 0 0 0;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -31,8 +31,8 @@ div.radio-section {
 span.radio-title {
     display: block;
     width: 10%;
-    margin: 0 0 0 15px;
-    text-align: left;
+    text-align: center;
+    margin: 0 25px 0 0;
     font-family: Arial;
     font-size: 13px;
     line-height: 18px;
@@ -67,7 +67,7 @@ input[type="radio"]:checked + label,
 input[type="radio"]:not(:checked) + label {
     display: inline-block;
     position: relative;
-    padding-left: 28px;
+    padding-left: 42px;
     line-height: 20px;
     cursor: pointer;
 }
@@ -124,9 +124,9 @@ div.checkbox-section {
 span.checkbox-title {
     display: block;
     width: 11%;
-    margin: 0 0 0 15px;
-    text-align: left;
+    text-align: center;
     font-family: Arial;
+    margin: 0 25px 0 0;
     font-size: 13px;
     line-height: 18px;
     font-weight: 600;
@@ -227,8 +227,8 @@ div.data-user-section {
 span.data-user-title {
     display: block;
     width: 11%;
-    margin: 0 0 0 15px;
-    text-align: left;
+    text-align: center;
+    margin: 0 25px 0 0;
     font-family: Arial;
     font-size: 13px;
     line-height: 18px;
@@ -274,4 +274,109 @@ input.data-user-input {
 
 input.data-user-input::placeholder {
     opacity: 0.5;
+}
+
+div.contact-info-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+
+div.contact-info-wrp {
+    width: 100%;
+    display: flex;
+    margin: 0 0 24px 0;
+    position: relative;
+}
+
+div.contact-info-wrp:nth-child(2) {
+    margin: 0;
+}
+
+div.phone-icon:after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 0;
+    right: 114px;
+    background-image: url('../img/phone-icon.png');
+    background-repeat: no-repeat;
+}
+
+div.email-icon:after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 0;
+    right: 115px;
+    background-image: url('../img/email-icon.png');
+    background-repeat: no-repeat;
+}
+
+span.contact-info-title {
+    display: block;
+    width: 11%;
+    text-align: center;
+    margin: 0 25px 0 0;
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #9FD468;
+    text-transform: uppercase;
+}
+
+input.contact-info {
+    width: 67%;
+    outline: none;
+    border: none;
+    padding: 0 0 10px 5px;
+    border-bottom: 1.5px solid black;
+    font-family: Arial;
+    font-size: 12px;
+    background-color: #f1f1f1;
+}
+
+input.contact-info::placeholder {
+    opacity: 0.5;
+}
+
+div.button-send-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+input.button-send {
+    width: 200px;
+    min-height: 50px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #7dbf38;
+    padding: 0;
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    outline: none;
+}
+
+input.button-send:hover {
+    position: relative;
+    top: 1px;
+    transition: all 0.4s;
+    background-color: #9FD468;
+}
+
+input.button-send:active {
+    background-color: #7dbf38;
 }
