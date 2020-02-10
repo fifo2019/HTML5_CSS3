@@ -104,6 +104,9 @@ a.top-logo-wrp:hover {
     color: #c7b299;
 }
 
+a.top-logo-wrp:active {
+    color: #ffffff ;
+}
 
 span.top-text-logo {
     display: block;
@@ -130,6 +133,10 @@ a.menu-item:hover {
     color: #c7b299;
 }
 
+a.menu-item:active {
+    color: #ffffff;
+}
+
 a.menu-item:nth-child(8) {
     margin: 0 63px 0 0;
 }
@@ -145,6 +152,10 @@ svg.basket-icon {
 
 svg.basket-icon:hover {
     fill: #c7b299;
+}
+
+svg.basket-icon:active {
+    fill: #ffffff;
 }
 
 form.top-search-wrp {
@@ -229,6 +240,11 @@ a.top-slider-prev-btn:hover:after {
     border-bottom: 2px solid #c7b299;
 }
 
+a.top-slider-prev-btn:active:after {
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
 a.top-slider-next-btn {
     display: block;
     width: 40px;
@@ -254,6 +270,12 @@ a.top-slider-next-btn:hover:after {
     border-top: 2px solid #c7b299;
     border-right: 2px solid #c7b299;
 }
+
+a.top-slider-next-btn:active:after {
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
 
 div.top-slider-text-wrp {
     width: 660px;
@@ -397,6 +419,10 @@ div.content-info-item {
     box-sizing: border-box;
 }
 
+div.content-info-item:hover {
+    cursor: pointer;
+}
+
 div.content-info-item:nth-child(4) {
     margin: 0;
 }
@@ -449,4 +475,40 @@ p.content-info-item-text {
     color: #8c8c8c;
     margin: 0;
     text-align: center;
+}
+
+section.ideas-wrp {
+    width: 100%;
+    background-color: #fbfaf8;
+    padding: 83px 0 0 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+span.ideas-title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-family: 'raleway', 'arial', sens-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #555555;
+    margin: 0 0 24px 0;
+}
+
+p.ideas-text {
+    width: 757px;
+    font-family: 'montserrat', 'arial', sens-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #8c8c8c;
+    text-align: center;
+    margin: 0 0 40px 0;
 }
