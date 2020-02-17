@@ -344,12 +344,12 @@ button.top-slider-btn:active {
 }
 
 div.top-paginator {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-height: 15px;
-}
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     min-height: 15px;
+ }
 
 a.top-paginator-item {
     display: block;
@@ -363,13 +363,6 @@ a.top-paginator-item {
     border: 2px solid transparent;
     transition: 0.1s;
     box-sizing: border-box;
-}
-
-a.top-item-active {
-    transform: scale(1.4);
-    border: 1px solid #d3c1ad;
-    background-color: transparent;
-    opacity: 1;
 }
 
 a.top-paginator-item:nth-child(5) {
@@ -1020,4 +1013,273 @@ p.statistics-item-text {
     color: #c7b299;
     text-align: center;
     margin: 0 0 30px 0;
+}
+
+section.recent-posts-wrp {
+    width: 100%;
+    padding: 81px 374px 81px 374px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span.recent-posts-title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-family: 'raleway', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #555555;
+    margin: 0 0 30px 0;
+}
+
+p.recent-posts-text {
+    width: 757px;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #8c8c8c;
+    margin: 0 0 40px 0;
+}
+
+div.recent-posts-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+}
+
+div.recent-posts-item-wrp {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+div.recent-posts-item-wrp:hover div.recent-posts-item-text-wrp {
+    background-color: #362f2d;
+}
+
+div.recent-posts-item-wrp:hover span.recent-posts-item-title {
+    color: #c7b299;
+}
+
+div.recent-posts-item-wrp:hover p.recent-posts-item-text {
+    color: #ffffff;
+}
+
+div.recent-posts-item-wrp:hover a.recent-posts-item-link {
+    color: #c7b299;
+}
+
+div.recent-posts-item-wrp:hover span.recent-posts-item-date-title {
+    background-color: #c7b299;
+}
+
+div.recent-posts-item-wrp:hover p.recent-posts-item-date-text {
+    background-color: #a48d72;
+}
+
+div.recent-posts-item-date-wrp {
+    width: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+div.recent-posts-item-paginator-wrp {
+    position: absolute;
+    top: 185px;
+    left: 134px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 15px;
+}
+
+a.recent-posts-item-paginator-item {
+    display: block;
+    width: 11px;
+    height: 11px;
+    outline: none;
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: #ffffff;
+    margin: 0 9px 0 0;
+    border: 2px solid transparent;
+    transition: 0.1s;
+    box-sizing: border-box;
+}
+
+a.recent-posts-item-paginator-item:nth-child(5) {
+    margin: 0;
+}
+
+a.recent-posts-item-paginator-item:hover {
+    transform: scale(1.4);
+    border: 1px solid #d3c1ad;
+    background-color: transparent;
+    opacity: 1;
+}
+
+span.recent-posts-item-date-title {
+    padding: 7px;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #363636;
+    border-radius: 3px 3px 0 0;
+    z-index: 100;
+}
+
+p.recent-posts-item-date-text {
+    margin: 0;
+    padding: 3px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #252525;
+    border-radius: 0 0 3px 3px;
+}
+
+div.recent-posts-item-text-wrp {
+    padding: 32px 44px 32px 29px;
+    box-sizing: border-box;
+}
+
+span.recent-posts-item-title {
+    width: 100%;
+    display: block;
+    font-family: 'raleway', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #555555;
+    margin: 0 0 19px 0;
+}
+
+p.recent-posts-item-text {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8c8c8c;
+    margin: 0 0 29px 0;
+}
+
+a.recent-posts-item-link {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #c7b299;
+    text-decoration: none;
+    position: relative;
+}
+
+a.recent-posts-item-link::after {
+    content: '';
+    width: 5px;
+    height: 8px;
+    top: 5px;
+    left: 75px;
+    background-image: url('../img/arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    display: none;
+}
+
+a.recent-posts-item-link:hover:after {
+    display: block;
+}
+
+div.recent-posts-btn-wrp {
+    width: 100%;
+    min-height: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+a.recent-posts-prev-btn {
+    margin: 0 8px 0 0;
+}
+
+a.recent-posts-prev-btn:nth-child(2) {
+    margin: 0;
+}
+
+svg.recent-posts-prev-btn-icon {
+    fill: #d1d1d1;
+}
+
+svg.recent-posts-next-btn-icon {
+    fill: #d1d1d1;
+}
+
+a.recent-posts-prev-btn:hover svg.recent-posts-prev-btn-icon {
+    fill: #c7b299;
+}
+
+a.recent-posts-next-btn:hover svg.recent-posts-next-btn-icon {
+    fill: #c7b299;
+}
+
+a.recent-posts-prev-btn:hover:active svg.recent-posts-prev-btn-icon {
+    fill: #d1d1d1;
+}
+
+a.recent-posts-next-btn:hover:active svg.recent-posts-next-btn-icon {
+    fill: #d1d1d1;
+}
+
+section.advertising-wrp {
+    width: 1920px;
+    min-height: 489px;
+    background-image: url('../img/background_advertising.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.advertising-img {
+    margin: 0 90px 0 0;
+}
+
+img.advertising-img:nth-child(4) {
+    margin: 0;
+}
+
+section.about-wrp {
+    width: 100%;
+    padding: 81px 375px 81px 375px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
