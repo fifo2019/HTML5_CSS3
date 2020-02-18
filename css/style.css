@@ -1,62 +1,62 @@
 @font-face {
     font-family: 'raleway';
-    src: url("../fonts/raleway/raleway-regular.ttf");
+    src: url("../fonts/Raleway/raleway-regular.ttf");
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'raleway';
-    src: url("../fonts/raleway/raleway-medium.ttf");
+    src: url("../fonts/Raleway/raleway-medium.ttf");
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'raleway';
-    src: url("../fonts/raleway/raleway-semi-bold.ttf");
+    src: url("../fonts/Raleway/raleway-semi-bold.ttf");
     font-style: normal;
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'raleway';
-    src: url("../fonts/raleway/raleway-bold.ttf");
+    src: url("../fonts/Raleway/raleway-bold.ttf");
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'raleway';
-    src: url("../fonts/raleway/raleway-extra-bold.ttf");
+    src: url("../fonts/Raleway/raleway-extra-bold.ttf");
     font-style: normal;
     font-weight: 800;
 }
 
 @font-face {
     font-family: 'montserrat';
-    src: url("../fonts/montserrat/montserrat-extra-light.ttf");
+    src: url("../fonts/Montserrat/montserrat-extra-light.ttf");
     font-style: normal;
     font-weight: 200;
 }
 
 @font-face {
     font-family: 'montserrat';
-    src: url("../fonts/montserrat/montserrat-light.ttf");
+    src: url("../fonts/Montserrat/montserrat-light.ttf");
     font-style: normal;
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'montserrat';
-    src: url("../fonts/montserrat/montserrat-regular.ttf");
+    src: url("../fonts/Montserrat/montserrat-regular.ttf");
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'roboto';
-    src: url("../fonts/roboto/roboto-regular.ttf");
+    src: url("../fonts/Roboto/roboto-regular.ttf");
     font-style: normal;
     font-weight: 400;
 }
@@ -80,6 +80,10 @@ header.top-page {
     background-image: url('../img/top-img.png');
     background-repeat: no-repeat;
     box-sizing: border-box;
+}
+
+*:hover {
+    transition: 0.3s;
 }
 
 div.top-title-wrp {
@@ -696,7 +700,7 @@ div.latest-card-wrp:hover > div > span.latest-card-title {
     color: #ffffff;
 }
 
-div.latest-card-wrp:hover > div > p.latest-card-text {
+div.latest-card-wrp:hover > div > span.latest-card-text {
     color: #c7b299;
 }
 
@@ -736,7 +740,8 @@ span.latest-card-title {
     color: #c7b299;
 }
 
-p.latest-card-text {
+span.latest-card-text {
+    display: block;
     margin: 0;
     font-family: 'montserrat', sans-serif;
     font-weight: 300;
@@ -1002,7 +1007,8 @@ span.statistics-item-title {
     margin: 0 0 21px 0;
 }
 
-p.statistics-item-text {
+span.statistics-item-text {
+    display: block;
     width: 100%;
     font-family: 'montserrat', sans-serif;
     font-weight: 300;
@@ -1204,7 +1210,7 @@ a.recent-posts-item-link::after {
     content: '';
     width: 5px;
     height: 8px;
-    top: 5px;
+    top: 6px;
     left: 75px;
     background-image: url('../img/arrow.png');
     background-repeat: no-repeat;
@@ -1226,6 +1232,7 @@ div.recent-posts-btn-wrp {
 
 a.recent-posts-prev-btn {
     margin: 0 8px 0 0;
+    text-decoration: none;
 }
 
 a.recent-posts-prev-btn:nth-child(2) {
@@ -1275,6 +1282,10 @@ img.advertising-img:nth-child(4) {
     margin: 0;
 }
 
+img.advertising-img:hover {
+    filter: brightness(40%);
+}
+
 section.about-wrp {
     width: 100%;
     padding: 81px 375px 81px 375px;
@@ -1282,4 +1293,244 @@ section.about-wrp {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #191919;
+}
+
+div.about-column-wrp {
+    width: 258px;
+    margin: 0 42px 0 0;
+}
+
+div.about-column-wrp:nth-child(4) {
+    width: 270px;
+    margin: 0;
+}
+
+a.about-waxom-logo-wrp {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 0 29px 0;
+}
+
+svg.about-waxom-logo-icon {
+    fill: currentColor;
+}
+
+span.about-waxom-logo-text {
+    display: block;
+    font-family: 'raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+}
+
+a.about-waxom-logo-wrp:hover {
+    color: #c7b299;
+}
+
+a.about-waxom-logo-wrp:active {
+    color: #ffffff;
+}
+
+p.about-waxom-text {
+    font-family: 'raleway', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555555;
+    margin: 0 0 33px 0;
+}
+
+p.about-waxom-text:hover {
+    color: #c7b299;
+}
+
+a.about-waxom-link {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #d1d1d1;
+    text-decoration: none;
+    position: relative;
+}
+
+
+a.about-waxom-link::after {
+    content: '';
+    width: 5px;
+    height: 8px;
+    top: 6px;
+    left: 75px;
+    background-image: url('../img/about_waxom_link_arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    display: none;
+}
+
+a.about-waxom-link:hover:after {
+    display: block;
+}
+
+span.about-recent-title {
+    display: block;
+    width: 100%;
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+div.about-recent-item-wrp {
+    padding: 20px 0 20px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #252525;
+}
+
+div.about-recent-item-wrp:nth-child(4) {
+    border: 0;
+}
+
+time.about-recent-item-date {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #363636;
+    margin: 0 0 10px 0;
+}
+
+p.about-recent-item-text {
+    margin: 0;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+}
+
+div.about-recent-item-wrp:hover time.about-recent-item-date {
+    color: #ffffff;
+}
+
+div.about-recent-item-wrp:hover p.about-recent-item-text {
+    color: #c7b299;
+}
+
+span.about-twitter-title {
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+div.about-twitter-item-wrp {
+    padding: 20px 0 20px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #252525;
+}
+
+div.about-twitter-item-wrp:nth-child(4) {
+    border: 0;
+}
+
+p.about-twitter-item-text {
+    margin: 0;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+}
+
+time.about-twitter-item-date {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #363636;
+}
+
+a.about-twitter-item-link {
+    text-decoration: none;
+    color: #00bff3;
+}
+
+img.about-widget-img:hover {
+    filter: brightness(40%);
+}
+
+div.about-twitter-item-wrp:hover p.about-twitter-item-text {
+    color: #c7b299;
+}
+
+div.about-twitter-item-wrp:hover time.about-twitter-item-date {
+    color: #ffffff;
+}
+
+
+span.about-widget-title {
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0 0 26px 0;
+}
+
+section.policy-wrp {
+    width: 100%;
+    padding: 45px 375px 52px 375px;
+    box-sizing: border-box;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+}
+
+p.policy-text {
+    margin: 0;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+}
+
+a.policy-text-key {
+    color: #959595;
+    text-decoration: none;
+}
+
+a.policy-text-key:hover {
+    color: #ffffff;
+}
+
+a.policy-text-FAQ {
+    color: #c7b299;
+    text-decoration: none;
+}
+
+a.policy-text-FAQ:hover {
+    color: #ffffff;
 }
